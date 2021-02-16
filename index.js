@@ -28,8 +28,8 @@ const start = (client = new Client()) => {
         // listen group invitation
         client.onAddedToGroup((chat) => {
             //let totalMem = chat.groupMetadata.participants.length
-            /*if (totalMem < 25) {
-                client.sendText(chat.id, `Maaf, untuk menambahkan bot ini, grup harus melebihi 25 member`).then(() => client.leaveGroup(chat.id))
+            /*if (totalMem < 2) {
+                client.sendText(chat.id, `Maaf, untuk menambahkan bot ini, grup harus melebihi 2 member`).then(() => client.leaveGroup(chat.id))
                 client.deleteChat(chat.id)
             } else {
                
